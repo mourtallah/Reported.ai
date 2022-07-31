@@ -1,2 +1,33 @@
 
-hello
+Recommendation System
+
+
+Problem statement:
+In this project building a recommendation system that recommends transcribed video content to all of the twitter topic categories.
+You will select 10 Twitter users  and determine which of the
+youtube transcriptions you need to feed the app for each one of them. Your recommendations will be based on their past retweets so select people that are very active on twitter.
+
+Description:
+Used twitter api to fetch twitter data from the user. And Youtube data api to collect youtube title 
+to recomend the Youtube video title based on top news topics
+
+Here tried address the video recommendation issue by cross-platform collaboration from Twitter to YouTube.
+
+I used YouTube as the video sharing platform to perform the recommendation task, and Twitter as the social 
+textual stream platform to extract the real-time hot topics users followed.
+
+Using Django webframework I designed a cross-platform video recommendation strategy 
+(1) real-time top topic detection—the top news topics that users are following currently are extracted from users’ tweets,
+which are utilized to obtain the related videos on YouTube. 
+ 
+CROSS-PLATFORM DATA ANALYSIS
+
+ examine the characteristics of user behaviors between Twitter and YouTube. 
+
+First, described how we collect our cross-platform dataset. In order to maintain the reliability of the data analysis, 
+we manually select some widely- known top news topics that are frequently talked about both in Twitter and YouTube.
+
+Second TF-IDF representation of Tweets plots and yotube dataplots here I am using the TfidfVectorizer from scikit-learn
+
+Third, With cosine similarity matrix computed, defined the function “recommendations” that will return top recommendations videos 
+
