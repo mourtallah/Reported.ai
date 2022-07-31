@@ -8,5 +8,6 @@ completed parts:
 GraphQL models (Mourtallah)
 GraphQL API (Mourtallah)
 Tweet API pull (Sangeetha)
-
+ElasticSearch Algorithm (Ajith)
+Video Transcription Algorithm (Aisha)
 
