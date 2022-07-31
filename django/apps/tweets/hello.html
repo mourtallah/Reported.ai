@@ -21,35 +21,38 @@
 
 
 
-        <p>this is twitter api {{q1}}</p> 
+        <p> {{q1}}</p> 
+        <p> tweets selected for the topic {{ q }} </p>
+      
 
 {% for tweet in tweets %}
-<p> recomended video list<br> </p>
 
-    <table><tr>
+
     
-        <th style="color: rgb(65, 41, 11);" >user Id</th>
-         <th style="color: rgb(65, 41, 11);" >date</th>
-         <th style="color: rgb(65, 41, 11);">tweets</th></h3>
+    
+       
   
-         </tr>
-   <td><h4>${{ tweet.id }}</h4></td>
+        
+  ${{ tweet.id }}</h4>
     <b>
-    <td>{{ tweet.created_at }}</h4></td>
+    {{ tweet.created_at }}</h4>
     <br>
-    <td><h2>{{tweet.description}}</h2></td>
+    <h2>{{tweet.text}}</h2>
     <br>
-    {% for result in results %}
     {% endfor %}
 
-{% endfor %}
+    <p> recomended video list<br> </p>
+    {% for result in results %}
+  
+
+
 
 
 {{result}}
 <br>
 
 
-
+{% endfor %}
 
 
 </table>
