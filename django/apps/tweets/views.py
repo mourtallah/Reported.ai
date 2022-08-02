@@ -217,7 +217,7 @@ def c(request):
 
 
 def like(request):
-    youtube = build('youtube', 'v3', developerKey='AIzaSyBfoGn0960ZupAD7YiIdwfRe1MDbdg9F_U')
+    youtube = build('youtube', 'v3', developerKey='')
    
     video_statistics = youtube.videos().list(id='geW09OOqieU',
                                         part='statistics').execute()
